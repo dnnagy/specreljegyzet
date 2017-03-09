@@ -3,4 +3,7 @@ main.log
 main.out
 main.pdf
 main.toc
+missfont.log
+*.log
+*.aux
 newcommands.tex.aux
