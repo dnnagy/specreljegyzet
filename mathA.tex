@@ -28,9 +28,22 @@ Ha megköveteljük, hogy az $\hat{A}$ leképezés legyen lineáris, akkor érvé
 és
 \[ \hat{A}(\alpha\mathbf{v}) = \alpha(\hat{A}\mathbf{v}) \]
 Tekintsünk most két bázist: $\left \{ \mathbf{e}_{(k)} \right \} _{k=1}^n \in \mathbb{V}$ és $\left \{ \mathbf{f}_{(\ell)} \right \} _{\ell=1}^m \in \mathbb{W}$.
-Ekkor írhatjuk, hogy:
-\[ \mathbf{v} = v^k\mathbf{e}_{(k)} \equiv \sum\limits_{k=1}^n v^k\mathbf{e}_{(k)}  \] illetve
+Ekkor írhatjuk, hogy
+\[ \mathbf{v} = v^k\mathbf{e}_{(k)} \equiv \sum\limits_{k=1}^n v^k\mathbf{e}_{(k)}  \]
+\\ Vagyis a $\mathbf{v}$ vektor az $\left \{ \mathbf{e}_{(k)} \right \} _{k=1}^n \in \mathbb{V}$ bázison kifejthető a
+$v^k$ koordináták segítségével. Hasonlóan írhatjuk, hogy
 \[ \mathbf{w} = w^\ell \mathbf{f}_{(\ell)} \equiv \sum\limits_{\ell=1}^m w^\ell \mathbf{f}_{(\ell)}  \]
 ahol használjuk a felsőindex-konvenciót és az Einstein féle összegzési konvenciót.
+Hasson most egy $\hat{A}$ lineáris operátor a $\mathbf{v}$ vektorra.
+Ekkor
+\[ \hat{A}\mathbf{v} = \hat{A} \left( v^k\mathbf{e}_{(k)} \right) = v^k\left( \hat{A}\mathbf{e}_{(k)} \right) \]
+Tehát ha ismerjük a bázisvektorok képét, akkor bármely $\mathbf{v}$ vektor képét ismerjük, hiszen $\mathbf{v}$ kifejthető
+a bázison.
+\\ De mivel $\hat{A}\mathbf{e}_{(k)} \in \mathbb{W}$, ezért kifejthető az $\left \{ \mathbf{f}_{(\ell)} \right \} _{\ell=1}^m \in \mathbb{W}$ bázison:
+\[ \hat{A}\mathbf{e}_{(k)} = \sum\limits_{\ell} \A_{~k}^{\ell} \mathbf{f}_{(\ell)} \textrm{ , ahol } \A_{~k}^{\ell} \in \mathbb{R} \]
 
+De tudjuk, hogy $\hat{A}\mathbf{v} = \mathbf{w}$, ezért a fentiek szerint
+\[ \mathbf{w} = \hat{A}\mathbf{v} = v^k\left( \hat{A}\mathbf{e}_{(k)} \right) = v^k \A_{~k}^{\ell} \mathbf{f}_{(\ell)} \]
+ami nem más mint
+\[ \sum\limits_{\ell} \left( \sum\limits_{k} \A_{~k}^{\ell} v^k \right) \mathbf{f}_{(\ell)}\]
 \subsection{Minkowski-tér}
